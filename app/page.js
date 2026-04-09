@@ -333,6 +333,34 @@ export default function Home() {
           </p>
         </div>
 
+        {/* Event embed */}
+        <div className="event-section">
+          <div className="event-header">
+            <div className="event-label">SESION EN VIVO</div>
+            <h2 className="event-title">
+              Google sacó un paper sobre Quantum Computing — qué tengo que hacer con mi BTC
+            </h2>
+            <p className="event-meta">
+              Con Camilo Gómez, autor de The Asymmetric Advantage. Formato AMA: Camilo explica, vos preguntás.
+            </p>
+          </div>
+          <div className="event-embed">
+            <iframe
+              src="https://lu.ma/embed/event/9limvw4n/simple"
+              width="100%"
+              height="450"
+              frameBorder="0"
+              style={{ border: "1px solid rgba(255,255,255,0.08)", borderRadius: "8px", background: "transparent" }}
+              allowFullScreen
+              aria-hidden="false"
+              tabIndex="0"
+            />
+          </div>
+          <p className="event-note">
+            Miembros de 10am.pro entran sin costo. Tu código está en el chat.
+          </p>
+        </div>
+
         {/* CTA */}
         <div className="cta-block">
           <a
@@ -700,6 +728,56 @@ export default function Home() {
           line-height: 1.7;
           color: #9CA3AF;
           margin: 0;
+        }
+
+        .event-section {
+          width: 100%;
+          margin-top: 48px;
+          padding-top: 32px;
+          border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .event-header {
+          margin-bottom: 24px;
+        }
+
+        .event-label {
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 10px;
+          font-weight: 600;
+          letter-spacing: 0.2em;
+          color: #D4A843;
+          margin-bottom: 12px;
+        }
+
+        .event-title {
+          font-size: clamp(18px, 3.5vw, 22px);
+          font-weight: 700;
+          color: #F9FAFB;
+          line-height: 1.3;
+          margin: 0 0 10px 0;
+          letter-spacing: -0.01em;
+        }
+
+        .event-meta {
+          font-size: 14px;
+          line-height: 1.6;
+          color: #9CA3AF;
+          margin: 0;
+        }
+
+        .event-embed {
+          width: 100%;
+          border-radius: 8px;
+          overflow: hidden;
+        }
+
+        .event-note {
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 11px;
+          color: #6B7280;
+          margin-top: 12px;
+          text-align: center;
         }
 
         .cta-block {
