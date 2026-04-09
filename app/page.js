@@ -844,6 +844,27 @@ export default function Home() {
             font-size: 11px;
             min-width: 80px;
           }
+
+          .event-embed iframe {
+            height: 350px;
+          }
+
+          .event-title {
+            font-size: 17px;
+          }
+
+          .result-card {
+            padding: 20px 16px;
+          }
+
+          .description {
+            font-size: 14px;
+            margin-bottom: 28px;
+          }
+
+          .context-block {
+            padding: 16px;
+          }
         }
       `}</style>
     </div>
